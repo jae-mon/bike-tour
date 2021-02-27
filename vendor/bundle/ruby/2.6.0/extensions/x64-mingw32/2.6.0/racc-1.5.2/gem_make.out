@@ -1,0 +1,17 @@
+current directory: C:/Users/jonathan/OpenClassroomProjects/ruby/bike-tour/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210227-8052-wvjvj2.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: C:/Users/jonathan/OpenClassroomProjects/ruby/bike-tour/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: C:/Users/jonathan/OpenClassroomProjects/ruby/bike-tour/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+generating cparse-x64-mingw32.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: C:/Users/jonathan/OpenClassroomProjects/ruby/bike-tour/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20210227-8052-1ob604f/racc
