@@ -1,0 +1,19 @@
+<div class="row photos">
+
+    <div class="col-sm" id="photo-grid">
+      <h1>Bike Race Photos</h1>
+      <p>See photos of bike races, similar to what's coming up!</p>
+      <p>(Images courtesy <a href="https://www.flickr.com/", target='_blank'><i class="fab fa-flickr"></i> flickr)</a></p>
+    </div>
+    <p class="btn btn-info btn-block scroll">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+      </p>
+
+    <div class="row" id="flickr">
+      <div class=" col-sm pics" ><%= javascript_pack_tag 'flicker' %></div>
+      <div class=" col-sm pics" ><%= javascript_pack_tag 'flicker' %></div>
+        
+    </div>
+
+</div>

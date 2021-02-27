@@ -1,0 +1,37 @@
+<%= form_with(model: slogan, local: true) do |form| %>
+  <% if slogan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(slogan.errors.count, "error") %> prohibited this slogan from being saved:</h2>
+
+      <ul>
+        <% slogan.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :firstname %><br>
+    <%= form.text_field :firstname, class: 'form-control', type:'text' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :lastname %><br>
+    <%= form.text_field :lastname, class: 'form-control', type:'text' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :email %><br>
+    <%= form.text_field :email, class: 'form-control', type:'email' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :slogan %><br>
+    <%= form.text_area :slogan, class: 'form-control', type:'text' %>
+  </div>
+
+  <div class="form-group">
+    <p class="btn btn-info btn-block"><%= form.submit %></p>
+  </div>
+<% end %>

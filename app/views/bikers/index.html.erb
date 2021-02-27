@@ -1,0 +1,30 @@
+<div class="row justify-content-center">
+  <div class="col-sm-12 col-lg-6">
+
+
+      <h1>Meet Our Awesome Bikers!</h1>
+
+      <div class="card mb-3" id= "biker-view">
+      <% @bikers.each do |biker| %>
+        <div class="row no-gutters">
+          <div class="col-md-4 card-img">
+          <p  id="faces"> <% if biker.avatar.attached? %>
+                  <%= image_tag biker.avatar %>
+                <% end %>
+            </p>     
+          </div>
+          <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to biker.firstname, biker %>  <%= link_to biker.lastname, biker %></h5>
+            <hr id="divide-line">
+                    
+          </div>
+        </div>
+      </div>
+      <% end %>
+  </div>
+
+  </div>
+</div>
+
+

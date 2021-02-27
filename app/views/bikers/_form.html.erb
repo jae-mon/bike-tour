@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+  <div class="col-sm-12 col-lg-6">
+
+<%= form_with(model: biker, local: true) do |form| %>
+  <% if biker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(biker.errors.count, "error") %> prohibited this biker from being saved:</h2>
+
+      <ul>
+        <% biker.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :firstname %><br>
+    <%= form.text_field :firstname, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :lastname %><br>
+    <%= form.text_field :lastname, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :city %><br>
+    <%= form.text_field :city, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :state %><br>
+    <%= form.text_field :state, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :geolocation %><br>
+    <%= form.text_field :geolocation, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <% if biker.avatar.attached? %>
+    <%= image_tag biker.avatar, style: "width: 200px; display: block" %>
+    <% end %>
+    <%= form.label :avatar %><br>
+    <%= form.file_field :avatar, class: "form-control" %>
+    
+  </div>
+
+  <div class="form-group">
+    <p class="btn btn-info btn-block"><%= form.submit %></p>
+  </div>
+
+<% end %>
+</div>
+</div>

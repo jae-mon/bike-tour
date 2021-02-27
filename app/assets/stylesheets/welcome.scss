@@ -1,0 +1,26 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+#map {
+    height: 70vh;
+    margin-top: 10vh;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+#race-date {
+    background: #CCC;
+    color: #007bff;
+    text-shadow: 3px 3px #000000;
+    font-family: 'Roboto', sans-serif;
+     width: 100vw;
+     border-radius: 5px;
+    padding: 36px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 48px;
+    
+}

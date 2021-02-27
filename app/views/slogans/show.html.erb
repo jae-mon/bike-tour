@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @slogan.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @slogan.lastname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @slogan.email %>
+</p>
+
+<p>
+  <strong>Slogan:</strong>
+  <%= @slogan.slogan %>
+</p>
+
+<%= link_to 'Edit', edit_slogan_path(@slogan) %> |
+<%= link_to 'Back', slogans_path %>

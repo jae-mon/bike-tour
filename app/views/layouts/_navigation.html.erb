@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navigation">
+        <div class='container '>
+        
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mr-auto">
+            <h3 class='nav-item logo'>BBT</h3>
+          </ul>
+
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item <%= 'active' if request.path == root_path %>">
+                <%= link_to 'Home', root_path, class: 'nav-link' %>
+            </li>
+
+            
+            <li class="nav-item <%= 'active' if request.path == bikers_path %>" >
+                        <%= link_to 'Bikers', bikers_path, class: 'nav-link' %>
+              </li>
+
+              <li class="nav-item <%= 'active' if request.path == picture_path %>"  >
+                        <%= link_to 'Pictures', picture_path, class: 'nav-link' %>
+              </li>
+
+              <li class="nav-item <%= 'active' if request.path == map_path %>"  >
+                        <%= link_to 'Map', map_path, class: 'nav-link' %>
+              </li>
+              
+              
+               <li class="nav-item <%= 'active' if request.path == new_slogan_path %>" data-toggle="tooltip" data-placement="top" title="Enter contest for a chance to win a ticket!">
+                <%= link_to 'Slogan', new_slogan_path, class: 'nav-link' %>
+              </li> 
+              
+
+            </ul>
+            
+           </div>
+         
+      </div>
+    </nav>
